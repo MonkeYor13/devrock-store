@@ -1,7 +1,15 @@
 import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
 
-export const Layout = () => {
+export default function Layout(props) {
+  const {children} = props;
   return (
-    <>Layout</>
+    <>
+    <Header></Header>
+    {children}
+    <Footer></Footer>
+    </>
   )
 }
+
