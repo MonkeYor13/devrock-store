@@ -22,7 +22,8 @@ function App() {
               <Route path="/carrito" element={<Carrito />}></Route>
               <Route path="/producto" element={<Producto />}></Route>
             </Routes>
-          </Layout>
+          </Layout> 
+          
         </UsarContexto>
       </BrowserRouter>
     </>
