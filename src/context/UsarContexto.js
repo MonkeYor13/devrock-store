@@ -3,6 +3,7 @@ import Contexto from './Contexto'
 import axios from 'axios';
 import { useState } from 'react';
 
+
 export default function UsarContexto(props) {
     const {children}= props;
     const [estado, setEstado] = useState([]);
@@ -19,7 +20,9 @@ export default function UsarContexto(props) {
         console.log(res.data);
     };
 //3.creamos agregar al carrito
-    const agregarCarrito= ()=>{};
+    const agregarCarrito= ()=>{
+        
+    };
 //4.creamos eliminar del carrito
     const eliminarCarrito= ()=>{};
 

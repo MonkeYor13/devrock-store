@@ -23,7 +23,6 @@ function App() {
               <Route path="/producto" element={<Producto />}></Route>
             </Routes>
           </Layout> 
-          
         </UsarContexto>
       </BrowserRouter>
     </>
