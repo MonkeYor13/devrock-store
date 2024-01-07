@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 .home-item-img {
-  width: 70%;
+  height: 100px;
 }
 .home-item-actions {
   display: flex;
@@ -19,7 +19,7 @@
 
 .home-item-titulo {
   margin: 0px;
-  font-size: 20px;
+  font-size: 12px;
 }
 .home-item-medidas {
   margin: 0px;

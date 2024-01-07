@@ -15,9 +15,9 @@ const {agregarCarrito}= useContext(Contexto);
           <a href="producto.html">
             <h1 className="home-item-titulo">{nombre}</h1>
           </a>
-          <p className="home-item-medidas">{medidas}</p>
+          <p className="home-item-medidas">Medidas:{medidas}</p>
           <div className="home-item-actions">
-            <h3 className="home-item-precio">{precio}</h3>
+            <h3 className="home-item-precio">AR${precio}</h3>
             <button
               className="home-item-comprar"
               onClick={() => {
