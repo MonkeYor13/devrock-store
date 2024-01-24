@@ -1,12 +1,15 @@
 import React from 'react'
 import Contexto from './Contexto'
 import axios from 'axios';
-import { useState } from 'react';
-
+//import { useState } from 'react';
+import { useReducer } from 'react';
+import Reducer from './Reducer';
 
 export default function UsarContexto(props) {
     const {children}= props;
-    const [estado, setEstado] = useState([]);
+    //const [estado, setEstado] = useState([]);
+
+    const [state, dispatch]= useReducer(Reducer, estadoInicial);
 
 //1.creamos nuestro estado inicial 
     const estadoInicial = {
