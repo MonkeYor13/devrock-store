@@ -1,5 +1,4 @@
 import React, {useContext} from "react";
-//import img from "../assets/statics/0.png";
 import "../assets/css/Item.css";
 import Contexto from "../context/Contexto";
 
@@ -20,8 +19,8 @@ const {agregarCarrito}= useContext(Contexto);
             <h3 className="home-item-precio">AR${precio}</h3>
             <button
               className="home-item-comprar"
-              onClick={() => {
-                agregarCarrito('pepeloco');
+              onClick={()=>{
+                agregarCarrito()
               }}
             >
               +

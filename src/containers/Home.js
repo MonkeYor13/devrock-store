@@ -1,26 +1,26 @@
 import React, {useContext, useEffect} from 'react'
-import Context from '../context/Contexto'
 import '../assets/css/Home.css'
 import Item from '../components/Item'
+import Contexto from '../context/Contexto'
 
 
 export default function Home() {
-  useEffect(() => {
-    listameProductos();
-  }, [])
   
-  const {listameProductos, productos} = useContext(Context);
+  const {listameProductos, productos} = useContext(Contexto)
+  
+  useEffect(()=>{
+    listameProductos()
+  }, [])
+
   return (
     <>
     <div className="container">
       <div className="wraper">
         <div className="home">
-            {/* <Item></Item> */}
-            {
-              productos.map((item)=>(
-                <Item {...item} key= {item.id}></Item>
-              ))
-            }
+            {productos.map((item)=>(
+              <Item {...item} key={item.id}></Item>
+            ))}
+            
         </div>
       </div>
     </div>
